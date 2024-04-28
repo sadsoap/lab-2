@@ -33,12 +33,12 @@
     
     Images and Multimedia
      -- * img
-        * audio
-        * video
+     -- * audio
+     -- * video
 
     Interactive Elements
-        * details
-        * summary
+     -- * details
+     -- * summary
 
     Forms
         * form
@@ -98,7 +98,8 @@
 
         <input type="checkbox" id="player3" name="player3">
         <label for="player3">Clint McElroy</label>
-        <br>
+
+        <hr>
 
         </section>
 
@@ -133,20 +134,120 @@
 
         </section>
 
+        <hr>
+
         <div>
         <!-- MISC MEETING COMMENTS/QUESTIONS/CONCERNS -->
-        <h3>Additional Comments</h3>
-
+        <h3>Notable Comments/Questions</h3>
+        <details>
+            <summary>Transcript of First Client Question</summary>
+            <b>Clint:</b> Alright here’s the first one, off to a great start with this one. “Griffin, any advice for new GM’s?” Apparently general managers.
+                <br>
+            <b>Griffin:</b> New Griffin McElroys.
+                <br>
+            <b>Travis:</b> Game Master.
+                <br>
+            <b>Clint:</b> “I am running my first campaign (long time player first time DM) and” - this is like a talk show - “and anything you might have would be helpful.” Lindsey is asking that. What kind of advice would you have for GM’s, which I can only-
+                <br>
+            <b>Travis:</b> Game Master.
+                <br>
+            <b>Justin:</b> No, Game Master is how you would refer to it in a like, an MMO. Like, somebody who works in like an MMO and like, logs in and -
+                <br>
+            <b>Griffin:</b> I don’t really understand like, for games like - so there’s, there’s lots of other RPG’s out there. There’s stuff like Pathfinder and uh, uh, I mean- uh- oh shit. Shadowrun, is another one. There’s like a ton of these pen and paper RPG’s and most of them use the term Game Master, not Dungeon Master, which I get, right, like, I think maybe we should adopt this terminology ‘cause how many fucking dungeons have you boys been in?
+                <br>
+            <b>Justin:</b> That’s true.
+                <br>
+            <b>Travis:</b> There’s the one.
+                <br>
+            <b>Clint:</b> One?
+                <br>
+            <b>Justin:</b> Well I guess we’ve kinda been in like, an expansive dungeon.
+                <br>
+            <b>Travis:</b> The whole world’s a dungeon, you know what I mean?
+                <br>
+            <b>Griffin:</b> Yeah, that’s true.
+                <br>
+            <b>Justin:</b> Yeah.
+                <br>
+            <b>Justin:</b> And it’s a vampire.
+                <br>
+            <b>[All at once]</b>
+                <br>
+            <b>Travis:</b> Yeah!
+                <br>
+            <b>Clint:</b> Yeah!
+                <br>
+            <b>Griffin:</b> Yeah!
+        </details>
         </div>
+
+        <hr>
 
         <!-- RELATED PHOTOS,DIAGRAMS,ETC. -->
         <h3>Related Photos</h3>
         <img src="./media/TazBalanceTHB.png" alt="Three cartoon characters sitting peacefully at the edge of a cliff.">
         <img src="./media/TazBalanceLive.jpg" alt="Panel of podcast members sitting on stage, with a projection of a graphic novel behind them.">
-
+        
+        <hr>
 
         <!-- VIDEO AND AUDIO ELEMENTS -->
         <h3>Video and Audio Recording</h3>
+        <audio controls src="./media/TazAmnestyTheme.mp3">TAZ:Amnesty Theme Song</audio>
+        <video controls width="500">
+            <source src="./media/TazAmnestyTitleSequence.mp4" type="video/mp4">
+        </video>
+
+        <hr>
+
+        <!-- FORMS -->
+        <h3>Forms</h3>
+        <form action="" method="get" class="input">
+            
+            <fieldset>
+                <legend>Fieldset Balance Game: A or B?</legend>
+                <label><input type="radio" name="radio" value="A" /> A</label>
+                <label><input type="radio" name="radio" value="B" /> B</label>
+            </fieldset>
+
+            <br>
+
+            <label>
+                Password:
+                <input name="fake-password" autocomplete="please" />
+            </label>
+            <button>Log in</button>
+
+            <br><br>
+
+            <label for="text-blurb">A pangram:</label>
+            <textarea id="text-blurb" name="text-blurb" rows="4" cols="50">The quick sly fox jumped over the lazy brown dog. Sphinx of black quartz, judge my vow.
+            </textarea>
+
+            <br><br>
+            
+            <label for="sweets">Choose your favorite sweet:</label>
+            <input list="sweets" name="sweet" id="sweet">
+
+            <datalist id="sweets">
+                <option value="Cake">
+                <option value="Cookie">
+                <option value="Pie">
+                <option value="Ice Cream">
+                <option value="Mochi">
+              </datalist>
+
+              <br><br>
+
+            <label for="snacks">Choose a snack:</label>
+
+            <select name="snacks" id="snacks">
+                <option value="pretzel">Pretzel</option>
+                <option value="chips">Chips</option>
+                <option value="apple-slices">Apple slices</option>
+                <option value="no-snack">I don't like snacks (booo /lh)</option>
+            </select>
+
+        </form>
 
     </main>
     </body>
